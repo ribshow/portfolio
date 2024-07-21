@@ -1,0 +1,36 @@
+// VARIÁVEIS DE CORES
+
+$color-white:   #FFFFFF;
+$color-green:   #29AE81;
+$color-marrom:  #A4A4A4;
+$color-black:   #000000;
+
+// VARIÁVEIS DE CORES PARA LINGUAGEM
+$javascript : #ECEC18;
+$html: #F89A0D;
+$laravel: #E98181;
+$react: #07B7E4;
+$mysql: #003399;
+
+// VÁRIAVEIS MEDIA QUERIES
+$media-mobile-s:    320px;
+$media-mobile-m:    375px;
+$media-mobile-l:    425px;
+$media-tablet:      768px;
+$media-desktop:     1024px;
+
+// MIXIN DE FONTES
+@mixin font-title {
+    font-family: 'Ruda', sans-serif;
+    font-weight: 500;
+}
+
+@mixin font-subtitle {
+    font-family: 'Ruda', sans-serif;
+    font-weight: 500;
+}
+
+@mixin font-paragraph {
+    font-family: 'Ruda', sans-serif;
+    font-weight: 400;
+}
