@@ -556,6 +556,7 @@ html, body {
     width: 180px;
     height: 40px;
     cursor: pointer;
+    transition: background-color 0.5s;
   }
   .webview .intro .container .m-auto-btn .btn-portfolio:hover {
     background-color: #FFFFFF;
@@ -689,6 +690,14 @@ html, body {
   .webview .contact .container .forms form .form-group .controls {
     padding: 5px;
   }
+  .webview .contact .container .forms form .form-group .btn-form-send {
+    transition: background-color 0.5s;
+  }
+  .webview .contact .container .forms form .form-group .btn-form-send:hover {
+    background-color: #FFFFFF;
+    color: #29AE81;
+    border: 1px solid #29AE81;
+  }
 }
 .webview .container-whatsapp {
   display: flex;
@@ -714,6 +723,7 @@ html, body {
   cursor: pointer;
   text-decoration: none;
   background-color: #29AE81;
+  transition: background-color 0.25s;
 }
 .webview .container-whatsapp .btn-whatsapp i {
   font-size: 2rem;

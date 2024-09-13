@@ -617,6 +617,7 @@ html,body{
                     width: 180px;
                     height: 40px;
                     cursor: pointer;
+                    transition: background-color 0.50s;
 
                     &:hover{
                         background-color: config.$color-white;
@@ -800,6 +801,16 @@ html,body{
                         .controls{
                             padding: 5px;
                         }
+
+                        .btn-form-send{
+                            transition: background-color 0.50s;
+
+                            &:hover{
+                                background-color: config.$color-white;
+                                color: config.$color-green;
+                                border: 1px solid config.$color-green;
+                            }
+                        }
                     }
                 }
             }
@@ -831,6 +842,7 @@ html,body{
         cursor: pointer;
         text-decoration: none;
         background-color: config.$color-green;
+        transition: background-color 0.25s;
 
         i{
             font-size: 2rem;
