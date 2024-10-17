@@ -1,318 +1,377 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio</title>
     <!-- icone do site-->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/img/favicon-16x16.png"
+    />
 
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- Carrousel -->
-    <link rel="stylesheet" href="./css/owl/owl.carousel.min.css">
-    <link rel="stylesheet" href="./css/owl/owl.theme.green.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/owl/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl/owl.theme.green.min.css" />
+  </head>
+  <body>
     <div class="webview">
+      <section class="intro">
+        <div class="container">
+          <h1>Heryson Andrade</h1>
+          <p>Desenvolvedor Júnior</p>
+          <div class="m-auto-btn">
+            <button id="btn-portfolio" class="btn-portfolio">Portfólio</button>
+          </div>
+          <div class="m-auto-btn">
+            <img
+              id="linkedin"
+              src="img/linkedin.png"
+              width="40"
+              height="40"
+              alt="linkedin"
+            />
+            <img
+              id="github"
+              src="img/github.png"
+              width="40"
+              height="40"
+              alt="linkedin"
+            />
+          </div>
+        </div>
+      </section>
 
-       <section class="intro">
-            <div class="container">
-                <h1>Heryson Andrade</h1>
-                <p>Desenvolvedor Júnior</p>
-                <div class="m-auto-btn">
-                    <button id="btn-portfolio" class="btn-portfolio">Portfólio</button>
-                </div>
+      <section class="sobre">
+        <div class="container">
+          <div class="title">
+            <h2>Sobre</h2>
+          </div>
+          <div class="row">
+            <div class="c-photo">
+              <img src="./img/profile.jfif" alt="Heryson Andrade" />
             </div>
-       </section>
+            <div class="c-description">
+              <p>
+                Meu nome é Heryson, moro em Jaú-SP, tenho 25 anos, estudo
+                Desenvolvimento de Software Multiplataforma na Fatec Jahu,
+                estando atualmente no 3° Semestre. Gosto de ouvir música, rir e
+                programar.
+              </p>
 
-       <section class="sobre">
-            <div class="container">
-                <div class="title">
-                    <h2>Sobre</h2>
-                </div>
-                <div class="row">
-                    <div class="c-photo">
-                        <img src="./img/profile.jfif" alt="Heryson Andrade">
+              <div class="habilities">
+                <div class="h-item">
+                  <div class="h-title">
+                    <h3>HTML e CSS</h3>
+                  </div>
+                  <div class="c-level">
+                    <div class="c-level-geral">
+                      <div class="c-level-knowhow c-80"></div>
+                      <span>80%</span>
                     </div>
-                    <div class="c-description">
-                        <p>
-                            Meu nome é Heryson, moro em Jaú-SP, tenho 25 anos, estudo Desenvolvimento de Software Multiplataforma na Fatec Jahu, estando atualmente no 3° Semestre. Gosto de ouvir música, rir e programar.
-                        </p>
-    
-                        <div class="habilities">
-                            <div class="h-item">
-                                <div class="h-title">
-                                    <h3>HTML e CSS</h3>
-                                </div>
-                                <div class="c-level">
-                                    <div class="c-level-geral">
-                                        <div class="c-level-knowhow c-80"></div>
-                                        <span>80%</span>
-                                    </div>
-                                </div>
-                            </div>
+                  </div>
+                </div>
 
-                            <div class="h-item">
-                                <div class="h-title">
-                                    <h3>MySQL</h3>
-                                </div>
-                                <div class="c-level">
-                                    <div class="c-level-geral">
-                                        <div class="c-level-knowhow c-70"></div>
-                                        <span>70%</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="h-item">
-                                <div class="h-title">
-                                    <h3>PHP com Laravel</h3>
-                                </div>
-                                <div class="c-level">
-                                    <div class="c-level-geral">
-                                        <div class="c-level-knowhow c-60"></div>
-                                        <span>60%</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="h-item">
-                                <div class="h-title">
-                                    <h3>Javascript</h3>
-                                </div>
-                                <div class="c-level">
-                                    <div class="c-level-geral">
-                                        <div class="c-level-knowhow c-50"></div>
-                                        <span>50%</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="h-item">
-                                <div class="h-title">
-                                    <h3>React</h3>
-                                </div>
-                                <div class="c-level">
-                                    <div class="c-level-geral">
-                                        <div class="c-level-knowhow c-40"></div>
-                                        <span>40%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="h-item">
+                  <div class="h-title">
+                    <h3>MySQL</h3>
+                  </div>
+                  <div class="c-level">
+                    <div class="c-level-geral">
+                      <div class="c-level-knowhow c-70"></div>
+                      <span>70%</span>
                     </div>
+                  </div>
                 </div>
-            </div>
-       </section>
 
-       <section class="services">
-            <div class="container">
-                <div class="s-title">
-                    <h2>Serviços</h2>
-                </div>
-                <div class="s-carrousel">
-                    <div class="s-carrousel-container">
-                        <div class="owl-carousel owl-theme">
-                            <div class="item s-carrousel-item">
-                                <div class="title">
-                                    <p>01</p>
-                                </div>
-                                <div class="body">
-                                    <div class="icon">
-                                        <span><i class="fa fa-desktop" aria-hidden="true"></i></span>
-                                    </div>
-                                    <div class="text">
-                                        <p>UI e UX</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item s-carrousel-item">
-                                <div class="title">
-                                    <p>02</p>
-                                </div>
-                                <div class="body">
-                                    <div class="icon">
-                                        <span><i class="fa fa-code" aria-hidden="true"></i></span>
-                                    </div>
-                                    <div class="text">
-                                        <p>Programação</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item s-carrousel-item">
-                                <div class="title">
-                                    <p>03</p>
-                                </div>
-                                <div class="body">
-                                    <div class="icon">
-                                        <span><i class="fa fa-database" aria-hidden="true"></i></span>
-                                    </div>
-                                    <div class="text">
-                                        <p>Banco de Dados</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item s-carrousel-item">
-                                <div class="title">
-                                    <p>04</p>
-                                </div>
-                                <div class="body">
-                                    <div class="icon">
-                                        <span><i class="fa fa-user-circle-o" aria-hidden="true"></i></span>
-                                    </div>
-                                    <div class="text">
-                                        <p>Engenharia de Software</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="h-item">
+                  <div class="h-title">
+                    <h3>PHP com Laravel</h3>
+                  </div>
+                  <div class="c-level">
+                    <div class="c-level-geral">
+                      <div class="c-level-knowhow c-60"></div>
+                      <span>60%</span>
                     </div>
+                  </div>
                 </div>
-            </div>
-       </section>
 
-       <section id="portfolios" class="portfolios">
-            <div class="container">
-                <div class="p-title">
-                    <h2>Portfólios</h2>
-                </div>
-                <div class="p-projects">
-
-                    <div class="project">
-                        <!--API GITHUB-->
-                        <div class="photos">
-                            <div class="image">
-                                <img src="./img/projeto_apigit.png" alt="">
-                                <div class="description">
-                                    <a href="https://ribshow.github.io/api-github" target="_blank">
-                                        Api GitHub
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--PROJETO INTEGRADOR-->
-                        <div class="photos">
-                            <div class="image">
-                                <img src="./img/projeto_pi.png" alt="">
-                                <div class="description">
-                                    <a href="https://github.com/ribshow/pi" target="_blank">
-                                        Projeto Integrador
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--SISEDU-->
-                        <div class="photos">
-                            <div class="image">
-                                <img src="./img/projeto_sisedu.png" alt="">
-                                <div class="description">
-                                    <a href="https://github.com/ribshow/SISEDU-2024" target="_blank">
-                                        SISEDU - PHP
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--GERADOR DE SENHA-->
-                        <div class="photos">
-                            <div class="image">
-                                <img src="./img/projeto_gerador.png" alt="">
-                                <div class="description">
-                                    <a href="https://ribshow.github.io/generate" target="_blank">
-                                        Gerador de Senha
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-
+                <div class="h-item">
+                  <div class="h-title">
+                    <h3>Javascript</h3>
+                  </div>
+                  <div class="c-level">
+                    <div class="c-level-geral">
+                      <div class="c-level-knowhow c-50"></div>
+                      <span>50%</span>
                     </div>
+                  </div>
                 </div>
+
+                <div class="h-item">
+                  <div class="h-title">
+                    <h3>React</h3>
+                  </div>
+                  <div class="c-level">
+                    <div class="c-level-geral">
+                      <div class="c-level-knowhow c-40"></div>
+                      <span>40%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-       </section>
+          </div>
+        </div>
+      </section>
 
-       <section class="contact">
-            <div class="container">
-                <div class="title">
-                    <h2>Contato</h2>
+      <section class="services">
+        <div class="container">
+          <div class="s-title">
+            <h2>Serviços</h2>
+          </div>
+          <div class="s-carrousel">
+            <div class="s-carrousel-container">
+              <div class="owl-carousel owl-theme">
+                <div class="item s-carrousel-item">
+                  <div class="title">
+                    <p>01</p>
+                  </div>
+                  <div class="body">
+                    <div class="icon">
+                      <span
+                        ><i class="fa fa-desktop" aria-hidden="true"></i
+                      ></span>
+                    </div>
+                    <div class="text">
+                      <p>UI e UX</p>
+                    </div>
+                  </div>
                 </div>
-
-                <div class="forms">
-                    <form id="my-form" method="POST" action="https://formspree.io/f/xovaqyyd">
-                        <div class="form-group">
-                            <div class="controls">
-                                <label for="name">Nome:</label>
-                                <input type="text" name="name" id="name" required>
-                            </div>
-
-                            <div class="controls">
-                                <label for="last-name">Sobrenome:</label>
-                                <input type="text" name="last-name" id="last-name" required>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="controls">
-                                <label for="email">Email:</label>
-                                <input type="email" name="email" id="email" required>
-                            </div>
-
-                            <div class="controls">
-                                <label for="cell">Celular:</label>
-                                <input type="text" name="cell" id="cell" required>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="controls">
-                                <label for="message">Mensagem:</label>
-                                <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                            </div>
-                        </div>
-
-                        <div class="form-group m-auto">
-                            <button class="btn-form-send" type="submit">
-                                Enviar
-                            </button>
-                        </div>
-                        <div class="form-group m-auto">
-                            <p id="my-form-status"></p>
-                        </div>
-                    </form>
+                <div class="item s-carrousel-item">
+                  <div class="title">
+                    <p>02</p>
+                  </div>
+                  <div class="body">
+                    <div class="icon">
+                      <span><i class="fa fa-code" aria-hidden="true"></i></span>
+                    </div>
+                    <div class="text">
+                      <p>Programação</p>
+                    </div>
+                  </div>
                 </div>
+                <div class="item s-carrousel-item">
+                  <div class="title">
+                    <p>03</p>
+                  </div>
+                  <div class="body">
+                    <div class="icon">
+                      <span
+                        ><i class="fa fa-database" aria-hidden="true"></i
+                      ></span>
+                    </div>
+                    <div class="text">
+                      <p>Banco de Dados</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item s-carrousel-item">
+                  <div class="title">
+                    <p>04</p>
+                  </div>
+                  <div class="body">
+                    <div class="icon">
+                      <span
+                        ><i class="fa fa-user-circle-o" aria-hidden="true"></i
+                      ></span>
+                    </div>
+                    <div class="text">
+                      <p>Engenharia de Software</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-       </section>
+          </div>
+        </div>
+      </section>
 
-       <div class="container-whatsapp">
-            <a href="https://api.whatsapp.com/send?phone=5514998283036" target="_blank" class="btn-whatsapp">
-                <i class="fa fa-whatsapp" aria-hidden="true"></i>
-            </a>
-       </div>
+      <section id="portfolios" class="portfolios">
+        <div class="container">
+          <div class="p-title">
+            <h2>Portfólios</h2>
+          </div>
+          <div class="p-projects">
+            <div class="project">
+              <!--API GITHUB-->
+              <div class="photos">
+                <div class="image">
+                  <img src="./img/projeto_apigit.png" alt="" />
+                  <div class="description">
+                    <a
+                      href="https://ribshow.github.io/api-github"
+                      target="_blank"
+                    >
+                      Api GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!--PROJETO INTEGRADOR-->
+              <div class="photos">
+                <div class="image">
+                  <img src="./img/projeto_pi.png" alt="" />
+                  <div class="description">
+                    <a href="https://github.com/ribshow/pi" target="_blank">
+                      Projeto Integrador
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!--SISEDU-->
+              <div class="photos">
+                <div class="image">
+                  <img src="./img/projeto_sisedu.png" alt="" />
+                  <div class="description">
+                    <a
+                      href="https://github.com/ribshow/SISEDU-2024"
+                      target="_blank"
+                    >
+                      SISEDU - PHP
+                    </a>
+                  </div>
+                </div>
+              </div>
 
-       <footer>
-            <span>
-                &copy; Todos os direitos reservados.
-            </span>
-       </footer>
+              <!--GERADOR DE SENHA-->
+              <div class="photos">
+                <div class="image">
+                  <img src="./img/projeto_gerador.png" alt="" />
+                  <div class="description">
+                    <a
+                      href="https://ribshow.github.io/generate"
+                      target="_blank"
+                    >
+                      Gerador de Senha
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container">
+          <div class="title">
+            <h2>Contato</h2>
+          </div>
+
+          <div class="forms">
+            <form
+              id="my-form"
+              method="POST"
+              action="https://formspree.io/f/xovaqyyd"
+            >
+              <div class="form-group">
+                <div class="controls">
+                  <label for="name">Nome:</label>
+                  <input type="text" name="name" id="name" required />
+                </div>
+
+                <div class="controls">
+                  <label for="last-name">Sobrenome:</label>
+                  <input type="text" name="last-name" id="last-name" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="controls">
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" required />
+                </div>
+
+                <div class="controls">
+                  <label for="cell">Celular:</label>
+                  <input type="text" name="cell" id="cell" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="controls">
+                  <label for="message">Mensagem:</label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="form-group m-auto">
+                <button class="btn-form-send" type="submit">Enviar</button>
+              </div>
+              <div class="form-group m-auto">
+                <p id="my-form-status"></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <div class="container-whatsapp">
+        <a
+          href="https://api.whatsapp.com/send?phone=5514998283036"
+          target="_blank"
+          class="btn-whatsapp"
+        >
+          <i class="fa fa-whatsapp" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <footer>
+        <span> &copy; Todos os direitos reservados. </span>
+      </footer>
     </div>
     <script src="./js/send.js"></script>
     <script src="./js/script.js"></script>
-</body>
+  </body>
 
-<!-- JQUERY -->
-<script src="./js/jquery3.7.1.js"></script>
-<!-- JQUERY MASK -->
-<script src="./js/jquery.mask.min.js"></script>
-<script src="./js/mask-form.js"></script>
-<!-- CARROUSEL -->
-<script src="./js/owl.carousel.js"></script>
-<script src="./js/owl.start.function.js"></script>
-<script src="./js/owl.carousel.min.js"></script>
+  <!-- JQUERY -->
+  <script src="./js/jquery3.7.1.js"></script>
+  <!-- JQUERY MASK -->
+  <script src="./js/jquery.mask.min.js"></script>
+  <script src="./js/mask-form.js"></script>
+  <!-- CARROUSEL -->
+  <script src="./js/owl.carousel.js"></script>
+  <script src="./js/owl.start.function.js"></script>
+  <script src="./js/owl.carousel.min.js"></script>
 </html>

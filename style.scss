@@ -1,857 +1,861 @@
-@use './sass/config';
-@use './sass/utils';
+@use "./sass/config";
+@use "./sass/utils";
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html,body{
-    @include config.font-paragraph;
-    width: 100%;
-    height: 100%;
-    font-size: 18px;
+html,
+body {
+  @include config.font-paragraph;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
 }
 
-.webview{
-    width: 100%;
-    margin: auto;
+.webview {
+  width: 100%;
+  margin: auto;
 
-    .intro{
+  .intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: config.$color-green;
+    color: config.$color-white;
+
+    .container {
+      h1 {
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      p {
+        font-size: 1rem;
+        text-align: center;
+      }
+
+      .m-auto-btn {
         display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 100vh;
-        background-color: config.$color-green;
-        color: config.$color-white;
+        margin-top: 8px;
 
-        .container{
-            h1{
-                font-size: 2rem;
-                text-align: center;
+        .btn-portfolio {
+          @include config.font-paragraph;
+          width: 160px;
+          height: 35px;
+          border-radius: 6px;
+          border: 1px solid config.$color-white;
+          background-color: transparent;
+          color: config.$color-white;
+        }
+
+        #linkedin,
+        #github {
+          margin: 0.5rem;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+.webview {
+  .sobre {
+    width: 100%;
+
+    .container {
+      padding: 10px;
+
+      .title {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+
+        h2 {
+          @include config.font-subtitle;
+          font-size: 1.6rem;
+          font-weight: bold;
+          color: config.$color-green;
+        }
+      }
+
+      .row {
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        .c-photo {
+          width: 100%;
+          margin: auto;
+          margin-bottom: 30px;
+
+          img {
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+          }
+        }
+
+        .c-description {
+          width: 100%;
+
+          p {
+            @include config.font-paragraph;
+            text-align: justify;
+            margin-bottom: 20px;
+          }
+
+          .habilities {
+            width: 100%;
+
+            .h-item {
+              width: 100%;
+              margin-bottom: 10px;
+
+              .h-title {
+                width: 100%;
+
+                h3 {
+                  @include config.font-paragraph;
+                  font-size: 1rem;
+                  font-weight: bold;
+                }
+              }
+
+              .c-level {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 100%;
+                min-height: 25px;
+
+                .c-level-geral {
+                  position: relative;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  width: 100%;
+                  height: 6px;
+                  border-radius: 6px;
+
+                  .c-level-knowhow {
+                    height: 100%;
+                  }
+
+                  span {
+                    @include config.font-paragraph;
+                    margin-left: 10px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.webview {
+  .services {
+    width: 100%;
+    background-color: config.$color-green;
+    color: config.$color-white;
+
+    .container {
+      padding: 10px;
+
+      .s-title {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+
+        h2 {
+          @include config.font-paragraph;
+          font-size: 1.6rem;
+          font-weight: bold;
+          color: config.$color-white;
+        }
+      }
+
+      .s-carrousel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 30px;
+
+        .s-carrousel-container {
+          display: flex;
+          flex-direction: row;
+          min-width: 100%;
+
+          .s-carrousel-item {
+            min-height: 260px;
+            background-color: config.$color-white;
+            color: config.$color-green;
+
+            .title {
+              width: 100%;
+              padding: 10px;
+
+              p {
+                @include config.font-paragraph;
+                font-size: 1.6rem;
+                font-weight: bold;
+              }
             }
 
-            p{
-                font-size: 1rem;
-                text-align: center;
-            }
+            .body {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              width: 100%;
+              min-height: 180px;
 
-            .m-auto-btn{
+              .icon {
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
                 width: 100%;
-                margin-top: 8px;
+                margin-bottom: 10px;
 
-                .btn-portfolio{
-                    @include config.font-paragraph;
-                    width: 160px;
-                    height: 35px;
-                    border-radius: 6px;
-                    border: 1px solid config.$color-white;
-                    background-color: transparent;
-                    color: config.$color-white;
+                .span i {
+                  font-size: 38px;
                 }
-            }
-        }
-    }
-}
+              }
 
-.webview{
-    .sobre{
-        width: 100%;
-
-        .container{
-            padding: 10px;
-
-            .title{
-                width: 100%;
-                text-align: center;
-                margin-top: 20px;
-
-                h2{
-                    @include config.font-subtitle;
-                    font-size: 1.6rem;
-                    font-weight: bold;
-                    color: config.$color-green;
-                }
-            }
-
-            .row{
-                width: 100%;
-                margin-top: 30px;
-                margin-bottom: 30px;
-
-                .c-photo{
-                    width: 100%;
-                    margin: auto;
-                    margin-bottom: 30px;
-
-                    img{
-                        width: 100%;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        background-position: top;
-                    }
-                }
-
-                .c-description{
-                    width: 100%;
-
-                    p{
-                        @include config.font-paragraph;
-                        text-align: justify;
-                        margin-bottom: 20px;
-                    }
-
-                    .habilities{
-                        width: 100%;
-
-                        .h-item{
-                            width: 100%;
-                            margin-bottom: 10px;
-
-                            .h-title{
-                                width: 100%;
-                                
-                                h3{
-                                    @include config.font-paragraph;
-                                    font-size: 1rem;
-                                    font-weight: bold;
-                                }
-                            }
-
-                            .c-level{
-                                display: flex;
-                                flex-direction: row;
-                                align-items: center;
-                                width: 100%;
-                                min-height: 25px;
-
-                                .c-level-geral{
-                                    position: relative;
-                                    display: flex;
-                                    flex-direction: row;
-                                    align-items: center;
-                                    width: 100%;
-                                    height: 6px;
-                                    border-radius: 6px;
-
-                                    .c-level-knowhow{
-                                        height: 100%;
-                                    }
-
-                                    span{
-                                        @include config.font-paragraph;
-                                        margin-left: 10px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-.webview{
-    .services{
-        width: 100%;
-        background-color: config.$color-green;
-        color: config.$color-white;
-
-        .container{
-            padding: 10px;
-
-            .s-title{
-                width: 100%;
-                text-align: center;
-                margin-top: 20px;
-                margin-bottom: 30px;
-
-                h2{
-                    @include config.font-paragraph;
-                    font-size: 1.6rem;
-                    font-weight: bold;
-                    color: config.$color-white;
-                }
-            }
-
-            .s-carrousel{
-                display:flex;
-                flex-direction: column;
+              .text {
+                display: flex;
+                flex-direction: row;
                 justify-content: center;
+                align-items: center;
                 width: 100%;
-                margin-bottom: 30px;
+                min-height: 10px;
 
-                .s-carrousel-container{
-                    display: flex;
-                    flex-direction: row;
-                    min-width: 100%;
-
-                    .s-carrousel-item{
-                        min-height: 260px;
-                        background-color: config.$color-white;
-                        color: config.$color-green;
-
-                        .title{
-                            width: 100%;
-                            padding: 10px;
-
-                            p{
-                                @include config.font-paragraph;
-                                font-size: 1.6rem;
-                                font-weight: bold;
-                            }
-                        }
-
-                        .body{
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                            align-items: center;
-                            width: 100%;
-                            min-height: 180px;
-
-                            .icon{
-                                display: flex;
-                                flex-direction: row;
-                                justify-content: center;
-                                align-items: center;
-                                width: 100%;
-                                margin-bottom: 10px;
-
-                                .span i {
-                                    font-size: 38px;
-                                }
-                            }
-
-                            .text{
-                                display: flex;
-                                flex-direction: row;
-                                justify-content: center;
-                                align-items: center;
-                                width: 100%;
-                                min-height: 10px;
-
-                                p{
-                                    @include config.font-paragraph;
-                                    text-align: center;
-                                    font-size: 1.4rem;
-                                }
-                            }
-                        }
-
-                    }
+                p {
+                  @include config.font-paragraph;
+                  text-align: center;
+                  font-size: 1.4rem;
                 }
+              }
             }
+          }
         }
+      }
     }
+  }
 }
 
-.webview{
+.webview {
+  .portfolios {
+    width: 100%;
+    min-height: 100vh;
 
-    .portfolios{
+    .container {
+      padding: 10px;
+
+      .p-title {
         width: 100%;
-        min-height: 100vh;
-
-        .container{
-            padding: 10px;
-
-            .p-title{
-                width: 100%;
-                text-align: center;
-                margin-top: 20px;
-                margin-bottom: 30px;
-
-                h2{
-                    @include config.font-subtitle;
-                    font-size: 1.6rem;
-                    font-weight: bold;
-                    color: config.$color-green;
-                }
-            }
-            
-            .p-projects{
-                width: 100%;
-
-                .project{
-                    width: 100%;
-                    display: grid;
-                    grid-template-columns: 100%;
-                    grid-template-rows: repeat(3, auto);
-                    row-gap: 10px;
-
-                    .photos{
-                        width: 100%;
-                        height: 100%;
-                        border-radius: 4px;
-
-                        .image{
-                            width: 100%;
-                            height: 100%;
-                            position: relative;
-
-                            &:hover{
-
-                                .description{
-                                    position: absolute;
-                                    display: flex;
-                                    width: 100%;
-                                    height: 50px;
-                                    background-color: #29AE81;
-                                    bottom: 0;
-                                    left: 0;
-                                    z-index: 9999;
-
-                                    p{
-                                        display: block;
-                                        color: config.$color-white;
-                                    }
-                                }
-                            }
-
-                            img{
-                                width: 100%;
-                                height: 100%;
-                                background-size: cover;
-                                background-repeat: no-repeat;
-                                background-position: center;
-                            }
-                        }
-
-                        .description{
-                            display: none;
-                            flex-direction: row;
-                            flex-wrap: wrap;
-                            justify-content: center;
-                            align-items: center;
-                            width: 100%;
-                            min-height: 50px;
-
-                            a{
-                                display: block;
-                                @include config.font-paragraph;
-                                color: config.$color-white;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-.webview{
-
-    .contact{
-        width: 100%;
+        text-align: center;
+        margin-top: 20px;
         margin-bottom: 30px;
 
-        .container{
-            padding: 10px;
-
-            .title{
-                width: 100%;
-                text-align: center;
-                margin-top: 20px;
-                margin-bottom: 30px;
-
-                h2{
-                    @include config.font-subtitle;
-                    font-size: 1.6rem;
-                    font-weight: bold;
-                    color: config.$color-green;
-                }
-            }
-
-            .forms{
-                width: 100%;
-
-                form{
-                    width: 100%;
-
-                    .form-group{
-                        width:100%;
-
-                        .controls{
-                            width: 100%;
-                            min-height: 70px;
-
-                            label{
-                                @include config.font-paragraph;
-                                font-weight: bold;
-                                color: config.$color-green;
-                            }
-
-                            input{
-                                @include config.font-paragraph;
-                                width: 100%;
-                                height: 30px;
-                                padding: 10px;
-                                border: 1px solid config.$color-green;
-
-                                &:active{
-                                    border: 1px solid #29AE81;
-                                    border-radius: 2px;
-                                }
-
-                                &:focus{
-                                    border: 1px solid #29AE81;
-                                    border-radius: 2px;
-                                }
-                            }
-
-                            textarea{
-                                @include config.font-paragraph;
-                                width: 100%;
-                                height: 180px;
-                                padding: 10px;
-                                border: 1px solid #29ae81;
-                                outline: none;
-
-                                &:active{
-                                    border: 1px solid #29ae81;
-                                    border-radius: 2px;
-                                }
-
-                                &:focus{
-                                    border: 1px solid #29ae81;
-                                    border-radius: 2px;
-                                }
-                            }
-                        }
-
-                        .btn-form-send{
-                            @include config.font-paragraph;
-                            margin-top: 20px;
-                            width: 140px;
-                            height: 40px;
-                            border: none;
-                            background-color: config.$color-green;
-                            color: config.$color-white;
-                            border-radius: 2px;
-                            cursor: pointer;
-
-                            &:hover{
-                                background-color: #29AE81;
-                            }
-
-                            &:active{
-                                background-color: #29AE81;
-                            }
-                        }
-                    }
-                }
-            }
+        h2 {
+          @include config.font-subtitle;
+          font-size: 1.6rem;
+          font-weight: bold;
+          color: config.$color-green;
         }
-    }
-}
+      }
 
-.webview{
-    footer{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+      .p-projects {
         width: 100%;
-        height: 50px;
-        background-color: config.$color-green;
 
-        span{
-            @include config.font-paragraph;
-            color: config.$color-white;
+        .project {
+          width: 100%;
+          display: grid;
+          grid-template-columns: 100%;
+          grid-template-rows: repeat(3, auto);
+          row-gap: 10px;
+
+          .photos {
+            width: 100%;
+            height: 100%;
+            border-radius: 4px;
+
+            .image {
+              width: 100%;
+              height: 100%;
+              position: relative;
+
+              &:hover {
+                .description {
+                  position: absolute;
+                  display: flex;
+                  width: 100%;
+                  height: 50px;
+                  background-color: #29ae81;
+                  bottom: 0;
+                  left: 0;
+                  z-index: 9999;
+
+                  p {
+                    display: block;
+                    color: config.$color-white;
+                  }
+                }
+              }
+
+              img {
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+              }
+            }
+
+            .description {
+              display: none;
+              flex-direction: row;
+              flex-wrap: wrap;
+              justify-content: center;
+              align-items: center;
+              width: 100%;
+              min-height: 50px;
+
+              a {
+                display: block;
+                @include config.font-paragraph;
+                color: config.$color-white;
+              }
+            }
+          }
         }
+      }
     }
+  }
 }
 
-@media only screen and (min-width: config.$media-mobile-l){
-    .webview .intro{
-        .container{
-            h1{
-                font-size: 2.4rem;
-            }
+.webview {
+  .contact {
+    width: 100%;
+    margin-bottom: 30px;
 
-            p{
-                font-size: 1.2rem;
-            }
+    .container {
+      padding: 10px;
+
+      .title {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+
+        h2 {
+          @include config.font-subtitle;
+          font-size: 1.6rem;
+          font-weight: bold;
+          color: config.$color-green;
         }
-    }
+      }
 
-    .webview .sobre{
-        .container{
-            .row{
-                display: grid;
-                grid-template-columns: repeat(2, 50%);
+      .forms {
+        width: 100%;
 
-                .c-photo{
-                    padding: 10px;
-                }
+        form {
+          width: 100%;
 
-                .c-description{
-                    padding: 10px;
+          .form-group {
+            width: 100%;
 
-                    p{
-                        font-size: 1.2rem;
-                    }
+            .controls {
+              width: 100%;
+              min-height: 70px;
 
-                    .habilities{
-                        .h-item{
-                            .h-title{
-                                h3{
-                                    font-size: 1.2rem;
-                                }
-                            }
+              label {
+                @include config.font-paragraph;
+                font-weight: bold;
+                color: config.$color-green;
+              }
 
-                            .c-level{
-                                .c-level-geral{
-                                    span{
-                                        font-size: 1.2rem;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    .webview .services{
-        .container{
-            .s-carrousel{
-                margin-bottom: 40px;
-                height: 400px;
-            }
-        }
-    }
-
-    .webview .portfolios{
-        .container{
-            .p-title{
-                margin-top: 30px;
-                margin-bottom: 30px;
-            }
-
-            .p-projects{
-                .project{
-                    grid-template-columns: repeat(2, 1fr);
-                    grid-template-rows: repeat(2, 1fr);
-                    row-gap: 10px;
-                    column-gap: 10px;
-
-                    .photos{
-                        height: 100%;
-
-                        img{
-                            position: relative;
-
-                            &:hover{
-
-                                .description{
-                                    position: absolute;
-                                    display: flex;
-                                    width: 100%;
-                                    height: 50px;
-                                    background-color: config.$color-green;
-                                    bottom: 0;
-                                    left: 0;
-                                    z-index: 9999;
-
-                                    p{
-                                        display: block;
-                                        color: config.$color-white;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    .webview .contact{
-        .container{
-            .title{
-                margin-top: 30px;
-                margin-bottom: 30px;
-            }
-
-            .forms{
-                form{
-                    .form-group{
-                        display: flex;
-                        flex-direction: row;
-                    }
-
-                    .controls{
-                        padding: 5px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media only screen and (min-width: config.$media-desktop){
-    .webview .intro{
-        .container{
-            h1{
-                font-size: 3rem;
-            }
-
-            p{
-                font-size: 1.6rem;
-            }
-
-            .m-auto-btn{
-                margin-top: 10px;
-
-                .btn-portfolio{
-                    @include config.font-paragraph;
-                    width: 180px;
-                    height: 40px;
-                    cursor: pointer;
-                    transition: background-color 0.50s;
-
-                    &:hover{
-                        background-color: config.$color-white;
-                        border-radius: 6px;
-                        border: 1px solid config.$color-green;
-                        color: config.$color-green;
-                    }
-                }
-            }
-        }
-    }
-
-    .webview .sobre{
-        .container{
-            width: 90%;
-            margin: auto;
-
-            .title{
-                margin-top: 40px;
-                margin-bottom: 40px;
-
-                h2{
-                    font-size: 2rem;
-                }
-            }
-
-            .row{
-                display: grid;
-                grid-template-columns: 40% 60%;
-                margin-bottom: 40px;
-
-                .c-photo{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    padding: 10px;
-
-                    img{
-                        width: 100%;
-                        max-width: 400px;
-                    }
-                }
-
-                .c-description{
-                    padding: 10px;
-                    margin-top: 0px;
-
-                    p{
-                        font-size: 1.2rem;
-                        margin-bottom: 25px;
-                    }
-
-                    .habilities{
-                        .h-item{
-                            .h-title{
-                                width: 100%;
-
-                                h3{
-                                    font-size: 1.2rem;
-                                }
-                            }
-
-                            .c-level{
-                                .c-level-geral{
-                                    span{
-                                        font-size: 1.2rem;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    .webview .services{
-        .container{
-            margin: auto; 
-        }
-
-        .s-title{
-            margin-top: 40px;
-            margin-bottom: 40px;
-
-            h2{
-                font-size: 2rem;
-            }
-        }
-
-        .s-carrousel{
-            width: 96%;
-            margin: auto;
-            margin-bottom: 40px;
-        }
-    }
-
-    .webview .portfolios{
-        min-height: auto;
-
-        .container{
-            width: 90%;
-            margin: auto;
-
-            .p-title{
-                h2{
-                    font-size: 2rem;
-                }
-            }
-
-            .p-projects{
+              input {
+                @include config.font-paragraph;
+                width: 100%;
+                height: 30px;
                 padding: 10px;
+                border: 1px solid config.$color-green;
 
-                .project{
-                    grid-template-columns: repeat(3, auto);
-                    grid-template-rows: 1fr;
-                    grid-auto-rows: 1fr;
-                    row-gap: 10px;
-                    column-gap: 10px;
+                &:active {
+                  border: 1px solid #29ae81;
+                  border-radius: 2px;
                 }
 
-                .photos{
-                    height: 100%;
-
-                    .image{
-                        position: relative;
-
-                        &:hover{
-                            .description{
-                                position: absolute;
-                                display: flex;
-                                width: 100%;
-                                height: 50px;
-                                background-color: config.$color-green;
-                                bottom: 0;
-                                left: 0;
-                                z-index: 9999;
-                            }
-
-                            a{
-                                display: block;
-                                color: config.$color-white;
-                                text-decoration: none;
-
-                                a:hover{
-                                    color: config.$color-white;
-                                    text-decoration: none;
-                                    cursor: pointer;
-                                }
-                            }
-                        }
-                    }
+                &:focus {
+                  border: 1px solid #29ae81;
+                  border-radius: 2px;
                 }
+              }
+
+              textarea {
+                @include config.font-paragraph;
+                width: 100%;
+                height: 180px;
+                padding: 10px;
+                border: 1px solid #29ae81;
+                outline: none;
+
+                &:active {
+                  border: 1px solid #29ae81;
+                  border-radius: 2px;
+                }
+
+                &:focus {
+                  border: 1px solid #29ae81;
+                  border-radius: 2px;
+                }
+              }
             }
+
+            .btn-form-send {
+              @include config.font-paragraph;
+              margin-top: 20px;
+              width: 140px;
+              height: 40px;
+              border: none;
+              background-color: config.$color-green;
+              color: config.$color-white;
+              border-radius: 2px;
+              cursor: pointer;
+
+              &:hover {
+                background-color: #29ae81;
+              }
+
+              &:active {
+                background-color: #29ae81;
+              }
+            }
+          }
         }
+      }
     }
-
-    .webview .contact{
-        margin-bottom: 50px;
-
-        .container{
-            width: 90%;
-            margin: auto;
-
-            .title{
-                margin-top: 30px;
-                margin-bottom: 30px;
-
-                h2{
-                    font-size: 2rem;
-                }
-            }
-
-            .forms{
-                form{
-                    .form-group{
-                        display: flex;
-                        flex-direction: row;
-                        margin-bottom: 10px;
-
-                        .controls{
-                            padding: 5px;
-                        }
-
-                        .btn-form-send{
-                            transition: background-color 0.50s;
-
-                            &:hover{
-                                background-color: config.$color-white;
-                                color: config.$color-green;
-                                border: 1px solid config.$color-green;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+  }
 }
 
-.webview .container-whatsapp{
+.webview {
+  footer {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    position: fixed;
-    bottom: 30px;
-    right: 20px;
-    padding: 10px;
-    min-width: 40px;
-    min-height: 40px;
-    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: config.$color-green;
 
-    .btn-whatsapp{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        border: none;
-        cursor: pointer;
-        text-decoration: none;
-        background-color: config.$color-green;
-        transition: background-color 0.25s;
-
-        i{
-            font-size: 2rem;
-            color: config.$color-white;
-        }
-
-        &:hover{
-            background-color: #1E8865;
-            border: 2px solid config.$color-white;
-        }
+    span {
+      @include config.font-paragraph;
+      color: config.$color-white;
     }
+  }
+}
+
+@media only screen and (min-width: config.$media-mobile-l) {
+  .webview .intro {
+    .container {
+      h1 {
+        font-size: 2.4rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .webview .sobre {
+    .container {
+      .row {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+
+        .c-photo {
+          padding: 10px;
+        }
+
+        .c-description {
+          padding: 10px;
+
+          p {
+            font-size: 1.2rem;
+          }
+
+          .habilities {
+            .h-item {
+              .h-title {
+                h3 {
+                  font-size: 1.2rem;
+                }
+              }
+
+              .c-level {
+                .c-level-geral {
+                  span {
+                    font-size: 1.2rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .webview .services {
+    .container {
+      .s-carrousel {
+        margin-bottom: 40px;
+        height: 400px;
+      }
+    }
+  }
+
+  .webview .portfolios {
+    .container {
+      .p-title {
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+
+      .p-projects {
+        .project {
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          row-gap: 10px;
+          column-gap: 10px;
+
+          .photos {
+            height: 100%;
+
+            img {
+              position: relative;
+
+              &:hover {
+                .description {
+                  position: absolute;
+                  display: flex;
+                  width: 100%;
+                  height: 50px;
+                  background-color: config.$color-green;
+                  bottom: 0;
+                  left: 0;
+                  z-index: 9999;
+
+                  p {
+                    display: block;
+                    color: config.$color-white;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .webview .contact {
+    .container {
+      .title {
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+
+      .forms {
+        form {
+          .form-group {
+            display: flex;
+            flex-direction: row;
+          }
+
+          .controls {
+            padding: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: config.$media-desktop) {
+  .webview .intro {
+    .container {
+      h1 {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+      }
+
+      .m-auto-btn {
+        margin-top: 10px;
+
+        .btn-portfolio {
+          @include config.font-paragraph;
+          width: 180px;
+          height: 40px;
+          cursor: pointer;
+          transition: background-color 0.5s;
+
+          &:hover {
+            background-color: config.$color-white;
+            border-radius: 6px;
+            border: 1px solid config.$color-green;
+            color: config.$color-green;
+          }
+        }
+      }
+    }
+  }
+
+  .webview .sobre {
+    .container {
+      width: 90%;
+      margin: auto;
+
+      .title {
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+        h2 {
+          font-size: 2rem;
+        }
+      }
+
+      .row {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        margin-bottom: 40px;
+
+        .c-photo {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          padding: 10px;
+
+          img {
+            width: 100%;
+            max-width: 400px;
+          }
+        }
+
+        .c-description {
+          padding: 10px;
+          margin-top: 0px;
+
+          p {
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+          }
+
+          .habilities {
+            .h-item {
+              .h-title {
+                width: 100%;
+
+                h3 {
+                  font-size: 1.2rem;
+                }
+              }
+
+              .c-level {
+                .c-level-geral {
+                  span {
+                    font-size: 1.2rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .webview .services {
+    .container {
+      margin: auto;
+    }
+
+    .s-title {
+      margin-top: 40px;
+      margin-bottom: 40px;
+
+      h2 {
+        font-size: 2rem;
+      }
+    }
+
+    .s-carrousel {
+      width: 96%;
+      margin: auto;
+      margin-bottom: 40px;
+    }
+  }
+
+  .webview .portfolios {
+    min-height: auto;
+
+    .container {
+      width: 90%;
+      margin: auto;
+
+      .p-title {
+        h2 {
+          font-size: 2rem;
+        }
+      }
+
+      .p-projects {
+        padding: 10px;
+
+        .project {
+          grid-template-columns: repeat(3, auto);
+          grid-template-rows: 1fr;
+          grid-auto-rows: 1fr;
+          row-gap: 10px;
+          column-gap: 10px;
+        }
+
+        .photos {
+          height: 100%;
+
+          .image {
+            position: relative;
+
+            &:hover {
+              .description {
+                position: absolute;
+                display: flex;
+                width: 100%;
+                height: 50px;
+                background-color: config.$color-green;
+                bottom: 0;
+                left: 0;
+                z-index: 9999;
+              }
+
+              a {
+                display: block;
+                color: config.$color-white;
+                text-decoration: none;
+
+                a:hover {
+                  color: config.$color-white;
+                  text-decoration: none;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .webview .contact {
+    margin-bottom: 50px;
+
+    .container {
+      width: 90%;
+      margin: auto;
+
+      .title {
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        h2 {
+          font-size: 2rem;
+        }
+      }
+
+      .forms {
+        form {
+          .form-group {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 10px;
+
+            .controls {
+              padding: 5px;
+            }
+
+            .btn-form-send {
+              transition: background-color 0.5s;
+
+              &:hover {
+                background-color: config.$color-white;
+                color: config.$color-green;
+                border: 1px solid config.$color-green;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.webview .container-whatsapp {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  padding: 10px;
+  min-width: 40px;
+  min-height: 40px;
+  z-index: 9999;
+
+  .btn-whatsapp {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: config.$color-green;
+    transition: background-color 0.25s;
+
+    i {
+      font-size: 2rem;
+      color: config.$color-white;
+    }
+
+    &:hover {
+      background-color: #1e8865;
+      border: 2px solid config.$color-white;
+    }
+  }
 }
